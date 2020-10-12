@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+main {
+  background-image: url('images/background/01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+}
+
+#left {
+  position: absolute;
+  top: 200px;
+  left: -300px;
+  vertical-align: top;
+  z-index: 0;
+}
+
+#right {
+  position: absolute;
+  top: 155px;
+  right: -300px;
+  vertical-align: top;
+}
+
+header {
+  background-color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  max-width: 1200px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 80px;
+  height: 10px;
+  border-radius: 40px;
+}
+
+.login-button a {
+  color: grey;
+  font-weight: 100;
+}
+
+.logo {
+  padding: 0;
+}
+
+.get-to-know-us {
+  text-align: center;
+}
+
+.get-to-know-us h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 100px;
+}
+
+.get-to-know-us p {
+  max-width: 800px;
+  width: 95%;
+  margin: auto;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 40px;
+  border-radius: 20px;
+}
+
+.main-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.left {
+  background-color: white;
+  color: #23272a;
+  font-weight: 100;
+}
+
+.right {
+  background-color: #23272a;
+  color: white;
+}
+
+@media screen and (max-width: 1830px) {
+  #left {
+    display: none;
+  }
+  #right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  nav {
+    flex-direction: column;
+  }
+  nav li,
+  nav a,
+  nav h1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  #left {
+    display: none;
+  }
+  #right {
+    display: none;
+  }
+}
